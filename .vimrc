@@ -53,3 +53,7 @@ let g:airline#extensions#tabline#formatter = 'default'
 nnoremap <M-Right> :bn<cr>
 nnoremap <M-Left> :bp<cr>
 nnoremap <c-x> :bp \|bd #<cr>
+
+let g:ctrlp_custom_ignore = ' v[ /] . (swp|zip)$'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_show_hidden = 1
